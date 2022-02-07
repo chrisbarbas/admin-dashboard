@@ -61,6 +61,7 @@ footer {
 header {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     background-color: #FFF;
     box-shadow: rgba(180, 180, 180, 0.19) 0px 10px 20px, rgba(163, 163, 163, 0.23) 0px 6px 6px;
 }
@@ -69,7 +70,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
     margin-right: 4rem;
     margin-left: 3rem;
 
@@ -105,8 +105,6 @@ header {
 
         >* {
             margin-left: 2rem;
-            font-size: clamp(0.7rem, 1.5vw, 1.4rem);
-            font-weight: 600;
         }
 
         .bell {
@@ -118,14 +116,21 @@ header {
             width: clamp(40px, 4vw, 65px);
             height: clamp(40px, 4vw, 65px);
         }
+
+        p {
+            font-size: clamp(0.8rem, 1.3vw, 1.1rem);
+            font-weight: 600;
+        }
     }
 }
 
 .header-bottom {
     display: flex;
     justify-content: space-between;
+    margin-top: -20px;
     margin-right: 3rem;
     margin-left: 3rem;
+    margin-bottom: 2.5vh;
 
     .welcome {
         //bottom left
@@ -143,16 +148,16 @@ header {
             display: flex;
             align-self: center;
             flex-direction: column;
-            margin-left: 2rem;
+            margin-left: calc(0.5rem + 1.2vw);
 
             p {
-                font-size: clamp(0.4rem, 1.9vw, 0.9rem);
+                font-size: clamp(0.7rem, 1.5vw, 0.9rem);
                 font-weight: 600;
             }
 
             h1 {
                 margin-top: -15px;
-                font-size: clamp(0.7rem, 2.7vw, 1.6rem);
+                font-size: clamp(1rem, 2.2vw, 1.4rem);
             }
         }
     }
@@ -163,7 +168,6 @@ header {
         display: flex;
         justify-content: center;
         align-self: center;
-        max-height: 40%;
 
         >button {
             display: flex;
@@ -173,8 +177,8 @@ header {
             margin-top: 15px;
             font-size: clamp(0.5rem, 1.2vw, 1rem);
             font-weight: bold;
-            width: clamp(2.2rem, 7vw, 7rem);
-            height: clamp(1.8rem, 5vh, 2.8rem);
+            width: clamp(1rem, 5.5vw, 7rem);
+            height: 45%;
             color: #FFFFFF;
             background-color: #e7447b;
             border: none;
