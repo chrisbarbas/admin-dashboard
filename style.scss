@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
 
 :root {
-    --sidewidth: clamp(200px, 25vw, 420px);
+    --sidewidth: clamp(180px, 23vw, 420px);
     --mainwidth: calc(100vw - (var(--sidewidth)));
     --topleft: calc(50% (var(--mainwidth)));
 }
@@ -71,7 +71,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-right: 4rem;
-    margin-left: 3rem;
+    margin-left: calc(1rem + 1vw);
 
     .search {
         //top left
@@ -102,6 +102,7 @@ header {
         width: 25vw;
         display: flex;
         align-items: center;
+        margin-left: -10px;
 
         >* {
             margin-left: 2rem;
@@ -129,7 +130,7 @@ header {
     justify-content: space-between;
     margin-top: -20px;
     margin-right: 3rem;
-    margin-left: 3rem;
+    margin-left: calc(1rem + 1vw);
     margin-bottom: 2.5vh;
 
     .welcome {
@@ -168,6 +169,7 @@ header {
         display: flex;
         justify-content: center;
         align-self: center;
+        margin-left: -10px;
 
         >button {
             display: flex;

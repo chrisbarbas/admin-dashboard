@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
 :root {
-  --sidewidth: clamp(200px, 25vw, 420px);
+  --sidewidth: clamp(180px, 23vw, 420px);
   --mainwidth: calc(100vw - (var(--sidewidth)));
   --topleft: calc(50% (var(--mainwidth)));
 }
@@ -97,7 +97,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 4rem;
-  margin-left: 3rem;
+  margin-left: calc(1rem + 1vw);
 }
 
 .header-top .search {
@@ -135,6 +135,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: -10px;
 }
 
 .header-top .account-info > * {
@@ -165,7 +166,7 @@ header {
           justify-content: space-between;
   margin-top: -20px;
   margin-right: 3rem;
-  margin-left: 3rem;
+  margin-left: calc(1rem + 1vw);
   margin-bottom: 2.5vh;
 }
 
@@ -219,6 +220,7 @@ header {
           justify-content: center;
   -ms-flex-item-align: center;
       align-self: center;
+  margin-left: -10px;
 }
 
 .header-bottom .nav-bar > button {
